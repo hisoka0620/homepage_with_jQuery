@@ -1,0 +1,779 @@
+*
+  padding: 0px
+  margin: 0px
+  font-family: "Open Sans", sans-serif
+  text-decoration: none
+  list-style: none
+  box-sizing: border-box
+
+body
+  width: 100%
+
+  header
+    padding: 20px 0
+    z-index: 10
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+
+  .container
+    max-width: 1320px
+    margin: 0 auto
+
+    .header-wrapper
+      display: flex
+      justify-content: space-between
+
+      .header-title
+        font-size: 24px
+        font-weight: 700
+        font-family: "Playfair Display", sans-serif
+        color: white
+
+      .header-menu-wrapper
+        display: flex
+        flex-direction: row
+        align-items: center
+      
+      .header-menu-wrapper>li>.change
+        display: block
+        padding: 10px
+        opacity: 0.7
+        color: white
+
+      .fix
+        opacity: 1
+        padding: 10px
+        color: white
+
+      .header-menu-wrapper>li>a:hover
+        opacity: 1
+
+      .angle-down
+        margin-left: 8px
+
+  main
+    position: relative
+    background-image: url("https://kurasu-magazine.net/wp-content/uploads/2019/03/living_alone3.jpeg")
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    height: 100vh
+    min-height: 800px
+
+  main::before
+    content: ""
+    z-index: 2
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: 35%
+    background-color: #3c948f
+
+  main::after
+    content: ""
+    z-index: 2
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: 65%
+
+  main>.container
+    position: relative
+    z-index: 3
+  
+  .main-wrapper
+    height: 100vh
+    min-height: 800px
+
+  .adjust-wrapper
+    color: white
+    padding: 170px 0
+
+  .main-wrapper1>h1
+    font-size: 50px
+    font-family: Georgia, serif
+
+  .main-wrapper2
+    margin-top: 40px
+    >p
+      font-family: Georgia, serif
+      font-size: 18px
+      margin-bottom: 30px
+
+  .introduce-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    p
+      margin-left: 20px
+    p>span
+      color: #c4c4c4
+      font-size: 14px
+  .my-icon
+    background-color: white
+    border-radius: 50%
+    width: 40px
+    height: 40px
+
+  .main2
+    padding-top: 70px
+    padding-bottom: 80px
+
+  .main2-wrapper
+    padding: 40px 0
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+  .main2-left-wrapper
+    width: 50%
+
+  .main2-subheading-wrapper
+    display: flex
+    flex-direction: wrap
+
+  .main2-heading-wrapper h2
+    margin-top: 18px
+    font-weight: 700
+    font-family: Georgia, serif
+    font-size: 30px
+
+  .over-line
+    height: 2px
+    width: 50px
+    background-color: #4399bb
+
+  .main2-subheading-wrapper
+    padding-top: 40px
+
+  .gray
+    background-color:#eeeeee
+
+  .main2-message-wrapper
+    display: flex
+    justify-content: center
+
+  .main2-message-wrapper p
+    width: 78%
+    font-size: 20px
+    color: gray
+    font-family: Georgia, serif
+
+  .main2-description-wrapper p
+    font-size: 14px
+    margin-bottom: 14px
+    color: gray
+
+  .main2-right-wrapper
+    width: 50%
+    padding-left: 60px
+
+  .main2-right-image-wrapper img
+    width: 100%
+    // padding-left: 30px 
+    // padding-top: 10px
+
+  .main2-right-heading-wrapper
+    position: relative
+
+  .adjust2-wrapper
+    width: 76%
+    position: absolute
+    top: -70px
+    right: 0
+    z-index: 3
+    background-color: white
+    box-sizing: border-box
+    padding-top: 40px
+    padding-left: 40px
+
+  .adjust2-wrapper>h2
+    font-size: 18px
+    font-family: Georgia, serif
+    margin-bottom: 10px
+
+  .adjust2-wrapper>p
+    color: gray
+    font-size: 14px
+
+  .main3
+    padding-bottom: 180px
+
+  .main3-heading
+    text-align: center
+
+  .main3-heading>.over-line
+    display: inline-block
+    margin-bottom: 10px
+  
+  .main3-heading h2
+    font-family: Georgia, serif
+
+  .main3-heading>h2
+    font-size: 28px
+
+  .main3-item-wrapper
+    display: flex
+    flex-wrap: wrap
+    padding-top: 80px
+
+  .item-contents
+    width: 25%
+    box-sizing: border-box
+    text-align: center
+
+  .main3-icon-image
+    background-color: #effbff 
+    border-radius: 50%
+    width: 120px
+    height: 120px
+    margin: 0 auto
+
+  .fa-3x
+    display: block
+    color: #3c948f
+    padding-top: 35px
+
+  .main3-item-description
+    margin-top: 30px
+    display: flex
+    flex-flow: column
+    justify-content: center
+    width: 100%
+
+  .main3-item-description>h2
+    font-size: 18px
+    font-family: Georgia, serif
+    width: 90%
+    margin: 0 auto
+
+  .main3-item-description>p
+    font-size: 13px
+    color: gray
+    width: 90%
+    margin: 20px auto 0 auto
+    padding: 0 10px
+
+  .main4
+    padding-bottom: 180px
+
+  .main4-heading
+    text-align: center
+    .over-line
+      display: inline-block
+      margin-bottom: 10px
+    h2
+      font-family: Georgia, serif
+
+  .main4-item-wrapper
+    display: flex
+    flex-wrap: wrap
+    padding-top: 90px
+
+  .item2-contents
+    width: 25%
+
+  .item2-image
+    display: flex
+    justify-content: center
+
+  .item2-image>a:hover
+    opacity: 0.7
+    transition: all 1s
+
+  .item2-image>a>img
+    height: 200px
+    width: 300px   
+
+  .main4-description-wrapper
+    padding: 24px 0 0 14px
+    .date
+      color: gray
+      font-size: 12px
+      margin-bottom: 8px
+    >a
+      color: black
+      font-family: Georgia, serif
+      font-weight: bold
+      width: 95%
+    >a:hover
+      color: #3c948f
+      trasition: all 1s 
+    .description
+      color: gray
+      font-size: 14px
+      margin-top: 10px
+      width: 90%
+    
+  .hidden-part
+    margin-top: 20px
+    display: flex
+    justify-content: flex-end
+    padding-right: 16px    
+
+  .hidden
+    color: black
+    padding-right: 6px
+    font-size: 13px
+    padding-top: 8px
+
+  .hover-this
+    border:1px solid #dddddd9d
+    border-radius: 20px
+    text-align: center
+    padding: 4px 9px
+    color: black
+  .hover-this:hover
+    border: 1px solid #3c948f
+    transition: all 1s
+
+  .fa-angle-right
+    width: 15px
+    height: 15px
+
+  .main5
+    padding-bottom: 120px
+
+  .kuchikomi-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+  .kuchikomi>p
+    font-size: 18px
+    font-family: Georgia, serif
+    margin-bottom: 20px
+
+  .sub
+    background-color: #3c948f
+  .sub>.container
+    display: flex
+    justify-content: space-between
+    padding: 50px 0
+    align-items: center
+    h1
+      color: white
+      font-family: Georgia, serif
+      font-weight: normal
+    a
+      color: white
+      border: 1px solid white
+      padding: 10px 30px
+      border-radius: 20px
+      font-size: 14px
+    a:hover
+      border: 1px solid #3c948f
+      color: #3c948f
+      background-color: white
+      transition: all 1s
+
+  footer>.container
+    display: flex
+    flex-wrap: wrap
+    padding: 80px 30px 80px 0
+
+  .footer-left-wrapper
+    width: 43%
+    padding-right: 20px
+
+  .about-foundation
+    margin-bottom: 34px
+
+  .about-foundation>h4
+    margin-bottom: 34px
+    font-family: Georgia, serif
+    
+  .about-foundation>p
+    color: gray
+    font-size: 14px
+
+  .connect>h4
+    font-family: Georgia, serif
+    margin-bottom: 34px
+
+  .social-icon
+    display: flex
+    flex-flow: row
+
+  .social-icon a
+    background-color: gray
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .social-icon a:hover
+    background-color: #3c948f
+    transition: all 1s
+
+  .mg-right
+    margin-right: 6px
+  
+  .social-icon a .icon
+    color: white
+
+  .footer-right-wrapper
+    display: flex
+    justify-content: space-between
+    width: 57%
+
+  .link>h4
+    font-family: Georgia, serif
+    margin-bottom: 30px
+
+  .link ul li
+    margin-bottom: 8px
+
+  .link ul li a
+    color: gray
+    font-size: 14px
+
+  .company>h4
+    font-family: Georgia, serif
+    margin-bottom: 30px
+
+  .company ul li
+    margin-bottom: 8px
+
+  .company ul li a
+    color: gray
+    font-size: 14px
+
+  .contact>h4
+    font-family: Georgia, serif
+    margin-bottom: 30px
+
+  .contact ul li
+    margin-bottom: 8px
+    font-size: 14px
+
+  .contact ul li a
+    color: gray
+    font-size: 14px
+
+  .contact ul li
+    color: gray 
+    font-size: 14px
+
+  //animation
+
+  .fade-in
+    opacity: 0
+    transition-duration: 500ms
+    transition-property: opacity, transform
+
+  .fade-in-up
+    transform: translate(0, 100px)
+
+  .fade-in-left
+    transform: translate(-100px, 0)
+
+  .fade-in-right
+    transform: translate(100px, 0)
+
+  .scroll-in
+    opacity: 1
+    transform: translate(0, 0)
+
+  .slide-in
+    opacity: 0
+    visibility: hidden
+    transition-duration: 500ms
+    transition-property: opacity, transform
+
+  .slide-in-right
+    transform: translate(10px, 0)
+
+  .slide-in-up
+    transform: translate(0, 30px)
+
+  .hover-in
+    opacity: 1
+    transform: translate(0, 0)
+    visibility: visible
+
+  //header-modal
+
+  .modal-add
+    position: relative
+
+  .header-modal
+    z-index: 14
+    position: absolute
+    top: 42px
+    left: 0
+    background-color: white
+    padding: 20px 0 20px 20px 
+    width: 170px
+    text-align: left
+    // visibility: hidden
+
+  .header-modal>li
+    font-size: 14px
+    margin-bottom: 10px
+    >a
+      color: black
+    >a:hover 
+      color: #3c948f
+
+  .modal2-add
+    position: relative
+    left: 0px
+
+  .second-list-right
+    margin-left: 20px
+
+  .header-second-modal
+    position: absolute
+    top: 0
+    left: 150px
+    z-index: 16
+    background-color: white
+    padding: 20px
+    width: 140px
+    >li
+      margin-bottom: 10px
+      fint-size: 14px
+      >a
+        color: black
+      >a:hover
+        color: #3c948f
+
+  //hamburger-menu
+
+  .burger-btn
+    display: none
+    width: 39px
+    height: 39px
+    position: relative
+    z-index: 7
+  /*   codepenの挙動のため */
+    background-color: transparent
+    border: none
+    
+  .bar
+    width: 20px
+    height: 1px
+    display: block
+    position: absolute
+    right: 50%
+    transform: translateX(-50%)
+    background-color: #ffffff
+  
+  .bar_top
+    top: 10px
+  
+  .bar_mid
+    top: 50%
+    transform: translate(-50%,-50%)
+  
+  .bar_bottom
+    bottom: 10px
+  
+  .burger-btn.close .bar_top
+    transform: translate(-50%,10px) rotate(45deg)
+    transition: transform .3s
+  
+  .burger-btn.close .bar_mid
+    opacity: 0
+    transition: opacity .3s
+  
+  .burger-btn.close .bar_bottom
+    transform: translate(-50%,-8px) rotate(-45deg)
+    transition: transform .3s
+
+  .nav-wrapper
+    display: none
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 6
+    
+    /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/ 
+
+  .header-nav
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.5)
+    z-index: 6
+      
+  .header-nav .nav-list
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+      
+  .header-nav .nav-item
+    margin-right: 0
+    margin-bottom: 40px
+    border-bottom: 1px solid black
+
+  .nav-item>a
+    color: black       
+    
+  //responsive
+  
+  @media screen and (max-width: 1360px)
+    .header-title
+      padding-left: 20px
+    .adjust-wrapper
+      padding-left: 20px
+    .main2-left-wrapper
+      padding-left: 20px
+    .main2-right-wrapper
+      padding-right: 20px
+    .sub>.container
+      padding-left: 20px
+      padding-right: 20px
+    .footer-left-wrapper
+      padding-left: 20px
+  
+  @media screen and (max-width: 1260px)
+    .item2-contents
+      width: 50%
+    .main4-description-wrapper
+      display: flex
+      flex-direction: column
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 30px
+      width: 52%
+
+  @media screen and (max-width: 958px)
+    .header-menu-wrapper
+      opacity: 0
+      visibility: hidden
+
+    .main2-wrapper
+      padding-right: 20px
+
+    .main2-left-wrapper
+      width: 100%
+      margin-bottom: 60px
+
+    .main2-right-wrapper
+      width: 100%
+      margin-bottom: 30px   
+
+    .item-contents
+      width: 50%
+      margin-bottom: 100px
+
+    .kuchikomi
+      width: 50%
+      display: flex
+      flex-flow: column
+      text-align: center
+
+    .kuchikomi>.introduce-wrapper
+      display: flex
+      justify-content: center
+
+    .kuchikomi-margin-top
+      margin-top: 60px
+      margin-right: auto
+      margin-left: 0
+
+    footer　.container
+      display: flex
+      flex-direction: column
+
+    .footer-left-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-around
+
+    .footer-right-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-evenly
+      margin: 40px auto 0 auto
+      padding: 0 20px
+
+    .link
+      margin-right: 40px
+
+    .company
+      margin-right: 40px
+
+    .burger-btn
+      display: block
+
+  @media screen and (max-width: 760px)
+    .main4
+      padding-bottom: 80px 
+
+    .item2-contents
+      width: 100%
+      margin-bottom: 30px
+
+    .kuchikomi
+      width: 100%
+      margin-bottom: 60px
+
+    .kuchikomi-margin-top
+      margin-top: 0
+    
+    .sub>.container
+      display: flex
+      flex-direction: column
+
+    .sub>.container>h1
+      text-align: center
+      width: 100%
+      margin-bottom: 60px
+
+  @media screen and (max-width: 700px)
+    main:before
+      display: none
+
+  @media screen and (max-width: 540px)
+    .item-contents
+      width: 100%
+
+    .footer-left-wrapper
+      display: flex
+      flex-direction: column
+
+
+  
+     
+
+    
+  
+      
+
+
+
+
+
+
+  
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+        
+
+  
+  
